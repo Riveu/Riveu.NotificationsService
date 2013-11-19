@@ -29,7 +29,7 @@ namespace Riveu.NotificationsService
                 loginDiv.Visible = false;
                 registerDiv.Visible = false;
                 ArrayList tmpData = new ArrayList();
-                radGrid.DataSource = notificationService.GetNotifications(usernameTextbox.Text);
+                //radGrid.DataSource = notificationService.GetNotifications(usernameTextbox.Text);
                 radGrid.DataBind();
             }
             else
@@ -48,6 +48,21 @@ namespace Riveu.NotificationsService
         protected void Logout_Click(object sender, EventArgs e)
         {
             Server.Transfer("~/Default.aspx");
+        }
+
+        protected void registerUserButton_Click(object sender, EventArgs e)
+        {
+            if (new NotificationsDao().Register(registerUser.Text, registerPassword.Text))
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "RegistrationSuccess", "<script>alert('User Registered');</script>");
+                loginDiv.Visible = true;
+                registerDiv.Visible = false;
+                loggedInDiv.Visible = false;
+            }
+            else
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "RegistrationFailure", "<script>alert('Registration Failed. Please try a different username.');</script>");
+            }
         }
     }
 }

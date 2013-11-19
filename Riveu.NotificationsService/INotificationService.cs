@@ -14,6 +14,17 @@ namespace Riveu.NotificationsService
     {
         [OperationContract]
         bool AuthenticateUser(string username, string password);
-        ArrayList GetNotifications(string username);
+        
+        [OperationContract]
+        IList GetNotifications(string username);
+
+        [OperationContract]
+        void RegisterSubscriber(string username, string password, string Uri, string deviceType, string deviceId);
+
+        [OperationContract]
+        void UnregisterSubscriber(string username, string password, string deviceType, string deviceId);
+
+        [OperationContract]
+        void SendNotification(string username, string password, string message);
     }
 }

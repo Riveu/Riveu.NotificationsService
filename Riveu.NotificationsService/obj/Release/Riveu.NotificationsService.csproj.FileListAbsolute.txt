@@ -1,0 +1,9 @@
+C:\Users\Michael Dlesk\Documents\GitHub\Riveu.NotificationsService\Riveu.NotificationsService\bin\Riveu.NotificationsService.dll.config
+C:\Users\Michael Dlesk\Documents\GitHub\Riveu.NotificationsService\Riveu.NotificationsService\bin\Riveu.NotificationsService.dll
+C:\Users\Michael Dlesk\Documents\GitHub\Riveu.NotificationsService\Riveu.NotificationsService\bin\Riveu.NotificationsService.pdb
+C:\Users\Michael Dlesk\Documents\GitHub\Riveu.NotificationsService\Riveu.NotificationsService\bin\Telerik.Web.UI.dll
+C:\Users\Michael Dlesk\Documents\GitHub\Riveu.NotificationsService\Riveu.NotificationsService\bin\Telerik.Web.UI.Skins.dll
+C:\Users\Michael Dlesk\Documents\GitHub\Riveu.NotificationsService\Riveu.NotificationsService\bin\Telerik.Web.UI.xml
+C:\Users\Michael Dlesk\Documents\GitHub\Riveu.NotificationsService\Riveu.NotificationsService\obj\Release\Riveu.NotificationsService.csprojResolveAssemblyReference.cache
+C:\Users\Michael Dlesk\Documents\GitHub\Riveu.NotificationsService\Riveu.NotificationsService\obj\Release\Riveu.NotificationsService.dll
+C:\Users\Michael Dlesk\Documents\GitHub\Riveu.NotificationsService\Riveu.NotificationsService\obj\Release\Riveu.NotificationsService.pdb

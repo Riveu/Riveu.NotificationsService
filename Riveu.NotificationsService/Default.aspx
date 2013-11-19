@@ -347,7 +347,18 @@ FOOTER
 		    </div>
         </div>
         <div id="registerDiv" runat="server">
-            Coming Soon
+            <div class="header">
+		    <h1>Register</h1>
+		    </div>
+		    <div class="content">
+                <asp:TextBox ID="registerUser" CssClass="input username" placeholder="Username" runat="server" />
+		    <div class="user-icon"></div>
+                <asp:TextBox ID="registerPassword" CssClass="input password" placeholder="Password" runat="server" TextMode="Password"  />
+		    <div class="pass-icon"></div>		
+		    </div>
+		    <div class="footer">
+                <asp:Button Text="Submit" ID="registerUserButton" CssClass="button" runat="server" OnClick="registerUserButton_Click" />
+		    </div>
         </div>
         <div id="loggedInDiv" runat="server">
             Notifications | <asp:LinkButton Text="Log Out" OnClick="Logout_Click" runat="server" />

@@ -76,6 +76,33 @@ namespace Riveu.NotificationsService {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl registerDiv;
         
         /// <summary>
+        /// registerUser control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox registerUser;
+        
+        /// <summary>
+        /// registerPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox registerPassword;
+        
+        /// <summary>
+        /// registerUserButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button registerUserButton;
+        
+        /// <summary>
         /// loggedInDiv control.
         /// </summary>
         /// <remarks>
