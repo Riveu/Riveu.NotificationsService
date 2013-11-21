@@ -9,8 +9,11 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <_PublishTargetUrl>C:\Users\Michael Dlesk\Desktop\published</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
+    <File Include="API.aspx">
+      <publishTime>11/19/2013 14:30:30</publishTime>
+    </File>
     <File Include="bin/Riveu.NotificationsService.dll">
-      <publishTime>11/18/2013 22:53:16</publishTime>
+      <publishTime>11/19/2013 19:02:20</publishTime>
     </File>
     <File Include="bin/Telerik.Web.UI.dll">
       <publishTime>10/14/2013 13:39:42</publishTime>
@@ -23,6 +26,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="NotificationService.svc">
       <publishTime>11/18/2013 13:48:32</publishTime>
+    </File>
+    <File Include="NotificationsPolicy.aspx">
+      <publishTime>11/19/2013 11:31:40</publishTime>
     </File>
     <File Include="Web.config">
       <publishTime>11/18/2013 16:50:24</publishTime>

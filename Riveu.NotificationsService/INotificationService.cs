@@ -26,5 +26,8 @@ namespace Riveu.NotificationsService
 
         [OperationContract]
         void SendNotification(string username, string password, string message);
+
+        [OperationContract]
+        bool RegisterUser(string username, string password);
     }
 }

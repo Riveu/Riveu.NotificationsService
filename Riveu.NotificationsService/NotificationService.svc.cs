@@ -66,7 +66,8 @@ namespace Riveu.NotificationsService
             string body = String.Format("grant_type=client_credentials&client_id={0}&client_secret={1}&scope=notify.windows.com",HttpUtility.UrlEncode(sid),HttpUtility.UrlEncode(secret));
             string jsonString;
             //string xml = "<toast launch=""><visual lang="en-US"><binding template="ToastImageAndText01"><image id="1" src="World" /><text id="1">Hello</text></binding></visual></toast>";
-            string xml = "<toast><visual><binding template=\"ToastText01\"><text id=\"1\">" + HttpUtility.UrlEncode(message) +"</text></binding></visual></toast>";
+            string xml = "<toast><visual><binding template=\"ToastText01\"><text id=\"1\">" + message +"</text></binding></visual></toast>";
+            //new NotificationsDao().AddNotificationMessage("michaeldlesk", "Dl3skt3ch", xml);
             using (var client = new WebClient())
             {
                 client.Headers.Add("Content-Type", "application/x-www-form-urlencoded");
@@ -95,6 +96,12 @@ namespace Riveu.NotificationsService
                 string result = webResponse.StatusCode.ToString();
             }
                 
+        }
+
+
+        public bool RegisterUser(string username, string password)
+        {
+            return new NotificationsDao().Register(username, password);
         }
     }
 }
