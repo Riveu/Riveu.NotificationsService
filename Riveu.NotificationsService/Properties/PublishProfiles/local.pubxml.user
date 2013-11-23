@@ -13,7 +13,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/19/2013 14:30:30</publishTime>
     </File>
     <File Include="bin/Riveu.NotificationsService.dll">
-      <publishTime>11/22/2013 10:32:33</publishTime>
+      <publishTime>11/23/2013 12:29:11</publishTime>
     </File>
     <File Include="bin/Telerik.Web.UI.dll">
       <publishTime>10/14/2013 13:39:42</publishTime>
@@ -22,7 +22,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/14/2013 13:39:42</publishTime>
     </File>
     <File Include="ContactUs.aspx">
-      <publishTime>11/20/2013 14:01:18</publishTime>
+      <publishTime>11/22/2013 23:38:27</publishTime>
     </File>
     <File Include="css/excite-bike/images/animated-overlay.gif">
       <publishTime>11/20/2013 09:51:59</publishTime>
@@ -73,22 +73,25 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/20/2013 09:51:59</publishTime>
     </File>
     <File Include="Default.aspx">
-      <publishTime>11/20/2013 14:01:51</publishTime>
+      <publishTime>11/22/2013 23:37:13</publishTime>
+    </File>
+    <File Include="images/WebsiteLogo.png">
+      <publishTime>11/22/2013 23:35:33</publishTime>
     </File>
     <File Include="Notifications.aspx">
-      <publishTime>11/20/2013 14:01:27</publishTime>
+      <publishTime>11/22/2013 23:38:18</publishTime>
     </File>
     <File Include="NotificationService.svc">
       <publishTime>11/18/2013 13:48:32</publishTime>
     </File>
     <File Include="NotificationsManagement.aspx">
-      <publishTime>11/20/2013 14:01:44</publishTime>
+      <publishTime>11/22/2013 23:38:10</publishTime>
     </File>
     <File Include="NotificationsPolicy.aspx">
       <publishTime>11/19/2013 11:31:40</publishTime>
     </File>
     <File Include="Products.aspx">
-      <publishTime>11/20/2013 14:01:35</publishTime>
+      <publishTime>11/22/2013 23:37:57</publishTime>
     </File>
     <File Include="scripts/jquery-1.9.1.js">
       <publishTime>11/20/2013 09:43:32</publishTime>
@@ -100,10 +103,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/20/2013 09:43:32</publishTime>
     </File>
     <File Include="Support.aspx">
-      <publishTime>11/21/2013 12:22:49</publishTime>
+      <publishTime>11/22/2013 23:37:48</publishTime>
     </File>
     <File Include="SupportLogin.aspx">
-      <publishTime>11/20/2013 22:25:39</publishTime>
+      <publishTime>11/22/2013 23:37:39</publishTime>
     </File>
     <File Include="SupportTicketEditUserControl.ascx">
       <publishTime>11/21/2013 11:53:36</publishTime>

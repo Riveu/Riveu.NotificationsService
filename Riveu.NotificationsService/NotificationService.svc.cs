@@ -53,6 +53,9 @@ namespace Riveu.NotificationsService
                     case "Win8":
                         SendWin8Notification(uri, message);
                         break;
+                    case "WP8":
+                        SendWP8Notification(uri, message);
+                        break;
                     default:
                         break;
                 }
@@ -98,6 +101,48 @@ namespace Riveu.NotificationsService
                 
         }
 
+        private void SendWP8Notification(string uri, string message)
+        {
+
+
+            HttpWebRequest sendNotificationRequest = (HttpWebRequest)WebRequest.Create(uri);
+
+            // Create an HTTPWebRequest that posts the toast notification to the Microsoft Push Notification Service.
+            // HTTP POST is the only method allowed to send the notification.
+            sendNotificationRequest.Method = "POST";
+
+            // The optional custom header X-MessageID uniquely identifies a notification message. 
+            // If it is present, the same value is returned in the notification response. It must be a string that contains a UUID.
+            // sendNotificationRequest.Headers.Add("X-MessageID", "<UUID>");
+
+            // Create the toast message.
+            string toastMessage = "<?xml version=\"1.0\" encoding=\"utf-8\"?>" +
+            "<wp:Notification xmlns:wp=\"WPNotification\">" +
+               "<wp:Toast>" +
+                    "<wp:Text1>Riveu</wp:Text1>" +
+                    "<wp:Text2>" + message + "</wp:Text2>" +
+                    "<wp:Param>/MainPage.xaml</wp:Param>" +
+               "</wp:Toast> " +
+            "</wp:Notification>";
+
+            // Set the notification payload to send.
+            byte[] notificationMessage = Encoding.Default.GetBytes(toastMessage);
+
+            // Set the web request content length.
+            sendNotificationRequest.ContentLength = notificationMessage.Length;
+            sendNotificationRequest.ContentType = "text/xml";
+            sendNotificationRequest.Headers.Add("X-WindowsPhone-Target", "toast");
+            sendNotificationRequest.Headers.Add("X-NotificationClass", "2");
+
+
+            using (Stream requestStream = sendNotificationRequest.GetRequestStream())
+            {
+                requestStream.Write(notificationMessage, 0, notificationMessage.Length);
+            }
+
+            // Send the notification and get the response.
+            HttpWebResponse response = (HttpWebResponse)sendNotificationRequest.GetResponse();
+        }
 
         public bool RegisterUser(string username, string password)
         {
