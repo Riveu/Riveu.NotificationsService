@@ -23,7 +23,7 @@ div.RadMenu .rmGroup     .rmLast   { float: none;  }
         <telerik:RadFormDecorator ID="RadFormDecorator1" DecoratedControls="All"  runat="server" />
         <div style="width:100%;">
             <div style="margin-left:5px; margin-bottom:10px; margin-top:10px">
-                <asp:HyperLink NavigateUrl="~/Default.aspx" runat="server"><asp:Image ImageUrl="Images/WebSiteLogo.png" runat="server" /></asp:HyperLink>
+                <asp:HyperLink runat="server" NavigateUrl="~/Default.aspx" ForeColor="OrangeRed" Font-Underline="false" Font-Names="Lucida Handwriting" Font-Size="XX-Large">Riveu Software</asp:HyperLink>
             </div>
              <telerik:RadMenu CssClass="RadMenu" runat="server" Skin="WebBlue" Width="100%">
                  <Items>

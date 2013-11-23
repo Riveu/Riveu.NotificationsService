@@ -98,6 +98,7 @@
     <Content Include="css\excite-bike\jquery-ui-1.10.3.custom.css" />
     <Content Include="css\excite-bike\jquery-ui-1.10.3.custom.min.css" />
     <Content Include="Default.aspx" />
+    <Content Include="images\WebsiteLogo.png" />
     <Content Include="Notifications.aspx" />
     <Content Include="NotificationService.svc" />
     <Content Include="NotificationsManagement.aspx" />

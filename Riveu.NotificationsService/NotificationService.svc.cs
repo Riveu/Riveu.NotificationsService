@@ -103,5 +103,11 @@ namespace Riveu.NotificationsService
         {
             return new NotificationsDao().Register(username, password);
         }
+
+
+        public bool VerifyUserAccountExists(string username)
+        {
+            return new NotificationsDao().CheckForUserAccount(username);
+        }
     }
 }

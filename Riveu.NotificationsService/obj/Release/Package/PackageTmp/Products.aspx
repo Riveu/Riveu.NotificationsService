@@ -1,5 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Riveu.NotificationsService.Default" %>
-
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Products.aspx.cs" Inherits="Riveu.NotificationsService.Products" %>
 <%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
 
 <!DOCTYPE html>
@@ -24,7 +23,7 @@ div.RadMenu .rmGroup     .rmLast   { float: none;  }
         <telerik:RadFormDecorator ID="RadFormDecorator1" DecoratedControls="All"  runat="server" />
         <div style="width:100%;">
             <div style="margin-left:5px; margin-bottom:10px; margin-top:10px">
-                <asp:HyperLink NavigateUrl="~/Default.aspx" runat="server"><asp:Image ImageUrl="Images/WebSiteLogo.png" runat="server" /></asp:HyperLink>
+                <asp:HyperLink runat="server" NavigateUrl="~/Default.aspx" ForeColor="OrangeRed" Font-Underline="false" Font-Names="Lucida Handwriting" Font-Size="XX-Large">Riveu Software</asp:HyperLink>
             </div>
              <telerik:RadMenu CssClass="RadMenu" runat="server" Skin="WebBlue" Width="100%">
                  <Items>
@@ -40,19 +39,17 @@ div.RadMenu .rmGroup     .rmLast   { float: none;  }
                 <br /><br /><br />
 
                 <div id="accordion" style="width:75%">
-                  <h3>Who Are We?</h3>
-                  <div>Riveu is a private software company that designs, develops, tests, and releases applications directly to end users. Our vision to provide the best software to consumers on a wide array of platforms.</div>
-                  <h3>What We Offer</h3>
-                  <div>Our primary focus is on Windows 8 and Windows Phone development for the direct end-user; however, we can also develop for any other mobile device.</div>
-                  <h3>How Are We Different?</h3>
-                  <div>We are full time developers that are creating applications in our down-time. We create our applications to help out the software community. We focus on the direct end-user, not distributing to retail establishments or large organizations.</div>
-                  <h3>Notifications System</h3>
-                  <div>Our notifications service is our flagship offering. It allows push notifications to mobile devices and our API allows for easy integration into any service, such as SickBeard, CouchPotato, Headphones, etc. We currently have the premier Windows 8 notification service and are currently looking to get it implemented into other systems.</div>
+                  <h3>Products</h3>
+                  <div>All of our products are currently in the development and test phase. The following have either been submitted to the App Stores or are already on the App Stores.<ul style="text-align:left"><li>Notifications - Windows 8 Client</li></ul></div>
+                  <h3>Notifications</h3>
+                  <div>Our notifications service is our flagship offering. It allows push notifications to mobile devices and our API allows for easy integration into any service, such as SickBeard, CouchPotato, Headphones, etc. We currently have the premier Windows 8 notification service and are currently looking to get it implemented into other systems. We have submitted the Windows 8 client to the Microsoft App Store. We are also working on a Windows 8.1 client, as well as a Windows Phone 8 Client, both to be release soon after the Windows 8 client gets approved by Microsoft.</div>
+                  <h3>Notifications - Supporting Scripts</h3>
+                  <div>We are currently working on some scripts to streamline the implementation of our notifications system into other applications and services. As those scripts are completed and tested, they will be available here.</div>
                 </div>
                 <script>
                     $(document).ready(
                         function () {
-                            $("#accordion").accordion({ heightStyle:"content"});
+                            $("#accordion").accordion({ heightStyle: "content" });
                         });
                 </script>
                 </center>

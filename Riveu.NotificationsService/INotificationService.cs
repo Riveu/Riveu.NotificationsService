@@ -29,5 +29,8 @@ namespace Riveu.NotificationsService
 
         [OperationContract]
         bool RegisterUser(string username, string password);
+
+        [OperationContract]
+        bool VerifyUserAccountExists(string username);
     }
 }
